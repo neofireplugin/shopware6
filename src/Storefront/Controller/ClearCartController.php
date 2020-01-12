@@ -13,6 +13,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ClearCartController extends StorefrontController
 {
+    
+    // ANFANG SOBALD ICH DAS HIER EINBINDE GEHT DAS PLUGIN NICHT MEHR...
+    
     /**
      * @var SystemConfigService
      */
@@ -22,6 +25,8 @@ class ClearCartController extends StorefrontController
     {
         $this->systemConfigService = $systemConfigService;
     }
+    
+    // ENDE SOBALD ICH DAS HIER EINBINDE GEHT DAS PLUGIN NICHT MEHR...
 
     /**
      * @Route("/plentymarkets", name="plentymarkets", options={"seo"="false"}, methods={"GET"})
