@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Access data</title>
+        <title lang="de-DE">Zugangsdaten</title>
+
+        <input-field type="bool">
+            <name>sync</name>
+            <label>sync</label>
+            <label lang="de-DE">Synchronisation aktivieren</label>
+        </input-field>
+
+        <input-field>
+            <name>lang</name>
+            <required>true</required>
+            <label>lang</label>
+            <label lang="de-DE">Sprachen</label>
+            <placeholder>de</placeholder>
+            <placeholder lang="de-DE">de</placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie kommagetrennt die Länderkürzel ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>plentymarketsuser</name>
+            <required>true</required>
+            <label>plentymarketsuser</label>
+            <label lang="de-DE">Username</label>
+            <placeholder></placeholder>
+            <placeholder lang="de-DE"></placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihren plentymarkets Usernamen ein.</helpText>
+        </input-field>
+
+        <input-field type="password">
+            <name>plentymarketspass</name>
+            <required>true</required>
+            <label>plentymarketspass</label>
+            <label lang="de-DE">Password</label>
+            <placeholder></placeholder>
+            <placeholder lang="de-DE"></placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihr plentymarkets Passwort ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>plentymarketsurl</name>
+            <required>true</required>
+            <label>plentymarketsurl</label>
+            <label lang="de-DE">plentymarkets Url</label>
+            <placeholder></placeholder>
+            <placeholder lang="de-DE"></placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihre plentymarkets URL ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>plentymarketsid</name>
+            <required>true</required>
+            <label>plentymarketsid</label>
+            <label lang="de-DE">plentymarkets ID</label>
+            <placeholder></placeholder>
+            <placeholder lang="de-DE"></placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihre plentymarkets ID ein.</helpText>
+        </input-field>
+
+    </card>
+
+    <card>
+        <title>Order transfer</title>
+        <title lang="de-DE">Bestellübergabe</title>
+
+        <input-field type="bool">
+            <name>plentymarketsorder</name>
+            <label>plentymarketsorder</label>
+            <label lang="de-DE">Bestellübergabe aktivieren</label>
+        </input-field>
+
+        <input-field type="datetime">
+            <name>plentymarketslastorder</name>
+            <required>true</required>
+            <label>plentymarketslastorder</label>
+            <label lang="de-DE">Bestellungen ab</label>
+            <helpText lang="de-DE">Tragen Sie hier Ihre Herfkunft ID ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>referer</name>
+            <required>true</required>
+            <label>referer</label>
+            <label lang="de-DE">Herkunft ID</label>
+            <placeholder>1</placeholder>
+            <placeholder lang="de-DE">1</placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihre Herfkunft ID ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>plentymarketsorderprefix</name>
+            <label>plentymarketsorderprefix</label>
+            <label lang="de-DE">Bestellnummer Prefix</label>
+            <placeholder></placeholder>
+            <placeholder lang="de-DE"></placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihren Bestellnummer Prefix ein.</helpText>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Product Data</title>
+        <title lang="de-DE">Produktdaten</title>
+
+        <input-field>
+            <name>preisid</name>
+            <required>true</required>
+            <label>preisid</label>
+            <label lang="de-DE">Preis ID</label>
+            <placeholder>1</placeholder>
+            <placeholder lang="de-DE">1</placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihre Preis ID ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>uvpid</name>
+            <label>uvpid</label>
+            <label lang="de-DE">Preis ID für den Pseudoprice</label>
+            <placeholder></placeholder>
+            <placeholder lang="de-DE"></placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihre Preis ID für den Pseudoprice ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>lagerid</name>
+            <required>true</required>
+            <label>lagerid</label>
+            <label lang="de-DE">Lager ID´s</label>
+            <placeholder>alle</placeholder>
+            <placeholder lang="de-DE">alle</placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier kommagetrennt ohne Leertaste die Lager ID`s ein. Alternativ können Sie das Wort: alle eintragen.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>propertiesid</name>
+            <label>propertiesid</label>
+            <label lang="de-DE">Merkmalgruppen ID´s</label>
+            <placeholder>1</placeholder>
+            <placeholder lang="de-DE">1</placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier kommagetrennt ohne Leertaste die Merkmalgruppen ID`s ein. Alternativ können Sie das Wort: alle eintragen.</helpText>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>produktnameid</name>
+            <required>true</required>
+            <label>produktnameid</label>
+            <label lang="de-DE">Name</label>
+            <options>
+                <option>
+                    <id>1</id>
+                    <name>name1</name>
+                    <name lang="de-DE">Name1</name>
+                </option>
+                <option>
+                    <id>2</id>
+                    <name>name2</name>
+                    <name lang="de-DE">Name2</name>
+                </option>
+                <option>
+                    <id>3</id>
+                    <name>name3</name>
+                    <name lang="de-DE">Name3</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>produktmetaid</name>
+            <label>produktmetaid</label>
+            <label lang="de-DE">Meta-Titel</label>
+            <options>
+                <option>
+                    <id>1</id>
+                    <name>name1</name>
+                    <name lang="de-DE">Name1</name>
+                </option>
+                <option>
+                    <id>2</id>
+                    <name>name2</name>
+                    <name lang="de-DE">Name2</name>
+                </option>
+                <option>
+                    <id>3</id>
+                    <name>name3</name>
+                    <name lang="de-DE">Name3</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>produktinfoid</name>
+            <label>produktinfoid</label>
+            <label lang="de-DE">Meta-Beschreibung</label>
+            <options>
+                <option>
+                    <id>1</id>
+                    <name>name1</name>
+                    <name lang="de-DE">Name1</name>
+                </option>
+                <option>
+                    <id>2</id>
+                    <name>name2</name>
+                    <name lang="de-DE">Name2</name>
+                </option>
+                <option>
+                    <id>3</id>
+                    <name>name3</name>
+                    <name lang="de-DE">Name3</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field type="bool">
+            <name>bestandaktiv</name>
+            <label>bestandaktiv</label>
+            <label lang="de-DE">Nur Produkte mit Bestand aktiv?</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>hauptposition</name>
+            <label>hauptposition</label>
+            <label lang="de-DE">Soll die Hauptvariante ingoniert werden?</label>
+        </input-field>
+
+    </card>
+
+    <card>
+        <title>Basic Settings</title>
+        <title lang="de-DE">Grundeinstellungen</title>
+        <input-field>
+            <name>securekey</name>
+            <required>true</required>
+            <label>securekey</label>
+            <label lang="de-DE">Sicherheitsschlüssel</label>
+            <placeholder>1</placeholder>
+            <placeholder lang="de-DE">Ydk2SHL323</placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier einen Sicherheitsschlüssel ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>timeout</name>
+            <required>true</required>
+            <label>timeout</label>
+            <label lang="de-DE">Intervall in Sek.</label>
+            <placeholder>90</placeholder>
+            <placeholder lang="de-DE">90</placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihren Intervall in Sekunden ein.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>itemscount</name>
+            <required>true</required>
+            <label>itemscount</label>
+            <label lang="de-DE">Artikel pro Abfrage</label>
+            <placeholder>50</placeholder>
+            <placeholder lang="de-DE">50</placeholder>
+            <helpText></helpText>
+            <helpText lang="de-DE">Tragen Sie hier Ihren Intervall in Sekunden ein.</helpText>
+        </input-field>
+
+    </card>
+</config>
